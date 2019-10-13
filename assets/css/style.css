@@ -1,18 +1,12 @@
-/* body {
-    background-image: url("../images/crystalbackground.jpg");
-  } */
+html {
+    box-sizing: border-box;
+}
 
 #random-number {
     font-family: monospace;
     font-size: 120px;
-    color: green;
+    color: white;
     text-align: center;
-    /* background: black; */
-}
-
-.rules {
-    background-color: #777;
-    padding: 20px;
 }
 
 .display {
@@ -20,15 +14,13 @@
     font-size: 40px;
     color :black;
     text-align: center;
-    /* background: black; */
 }
 
 #your-total {
     font-family: monospace;
     font-size: 120px;
-    color: green;
+    color: white;
     text-align: center;
-    /* background: black; */
 }
 
 .crystal-image {
@@ -36,30 +28,48 @@
     white-space: nowrap;
 }
 
-/* .crystals {
-    white-space: nowrap;
-} */
-
 .container {
-    /* border-color: black;
+    border-color: black;
     border-style: solid;
-    border-width: 1px; */
+    border-width: 1px;
     padding: 20px;
+    margin: 20px;
     margin-top: 20px;
+    background-color: plum;
 }
 
 p {
     display: none;
     font-weight: bold;
     color: white;
+    font-size: 18px;
 }
 
+.row {
+    padding: 0px 20px 0px 20px;
+}
 
-
+/* media queries */
 @media screen and (min-width: 768px) {
 
     img {
-    width: 100px;
+    width: 150px;
+    }
+    .crystals {
+    white-space: nowrap;
+    }
+      
+  }
+
+  @media screen and (min-width: 468px) {
+
+    img {
+    width: 125px;
+    padding: 5px;
+    }
+
+    .crystals {
+    white-space: nowrap;
     }
   
   }

@@ -31,7 +31,7 @@ $('#random-number').html(randomNumber);
 $("#your-total").html(randomNumber);
 
 // Rules button
-$("button").click(function() {
+$(".button").click(function() {
     $( "p" ).slideToggle(); 
 });
 
@@ -41,7 +41,7 @@ for (let i = 0; i < 4; i++) {
     let imageCrystal = $("<img>");
     let crystalNumber = Math.floor(Math.random() * 12 + 1);
     imageCrystal.addClass("crystal-image col-md-2 col-sm-3").attr("id","crystalID" + i);
-    imageCrystal.attr("src", "assets/images/crystal" + i + ".png");
+    imageCrystal.attr("src", "assets/images/crystal" + i + "x.png");
     imageCrystal.attr("data-crystalValue", crystalNumber);
     imageCrystal.attr("data-location", i);
     $("#crystals").append(imageCrystal);
@@ -51,14 +51,17 @@ for (let i = 0; i < 4; i++) {
     $(".crystal-image").click(function() {
         let crystalValue = parseInt($(this).attr("data-crystalValue"));
         $( "#crystalID" + $(this).attr("data-location") ).animate({
-            padding: "30px"
+            // width: "170px"
+            padding: "20px"
         }, 300 ); 
         $( "#crystalID" + $(this).attr("data-location") ).animate({
-            padding: "10px"
+            // width: "210px"
+            padding: "0px"
         }, 200 );
         $( "#crystalID" + $(this).attr("data-location") ).animate({
-            padding: "20px"
-        }, 100 );
+            // width: "191px"
+            padding: "5px"
+        }, 100, function () { $(this).removeAttr('style'); });
         randomNumber -= crystalValue;
         $("#your-total").html(randomNumber);
     

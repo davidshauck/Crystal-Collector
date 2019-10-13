@@ -1,3 +1,7 @@
+body {
+    background-image: url("../images/crystalbackground.jpg");
+   }
+
 html {
     box-sizing: border-box;
 }
@@ -7,6 +11,26 @@ html {
     font-size: 120px;
     color: white;
     text-align: center;
+}
+
+.button {
+    text-align: center;
+    background-color: #a4eda2;
+    padding: 10px;
+    margin: 0px 30% 0px 30%;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+}
+
+h1 {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .display {
@@ -24,8 +48,8 @@ html {
 }
 
 .crystal-image {
-    padding: 20px;
-    white-space: nowrap;
+    padding: 5px;
+    /* white-space: nowrap; */
 }
 
 .container {
@@ -35,7 +59,7 @@ html {
     padding: 20px;
     margin: 20px;
     margin-top: 20px;
-    background-color: plum;
+    background-color: #66d4cf;
 }
 
 p {
@@ -46,7 +70,7 @@ p {
 }
 
 .row {
-    padding: 0px 20px 0px 20px;
+    padding: 0px;
 }
 
 /* media queries */
@@ -54,6 +78,7 @@ p {
 
     img {
     width: 150px;
+    height: 150px;
     }
     .crystals {
     white-space: nowrap;
@@ -65,7 +90,8 @@ p {
 
     img {
     width: 125px;
-    padding: 5px;
+    height: 125 px;
+    /* padding: 5px; */
     }
 
     .crystals {

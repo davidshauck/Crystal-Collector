@@ -1,0 +1,35 @@
+#random-number {
+    font-family: monospace;
+    font-size: 120px;
+    color: green;
+    text-align: center;
+    /* background: black; */
+}
+
+.display {
+    font-family: monospace;
+    font-size: 40px;
+    color :black;
+    text-align: center;
+    /* background: black; */
+}
+
+#your-total {
+    font-family: monospace;
+    font-size: 120px;
+    color: green;
+    text-align: center;
+    /* background: black; */
+}
+
+.gem {
+    font-family: monospace;
+    font-size: 120px;
+    color: green;
+    text-align: center;
+}
+
+.crystal-image {
+    padding: 20px;
+
+}

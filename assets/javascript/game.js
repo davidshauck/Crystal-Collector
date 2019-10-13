@@ -13,7 +13,7 @@ let yourTotal = 0;
 
 $("#your-total").html(yourTotal);
 $("#wins").html("Wins: " + wins);
-$("#losses").html("Losses: " + wins);
+$("#losses").html("Losses: " + losses);
 
 function playAgain() {
     randomNumber = "";
@@ -22,6 +22,8 @@ function playAgain() {
     console.log("playing again");
     randomNumber = Math.floor(Math.random() * 102 + 19);
     randomNumber = randomNumber*1;
+    $( ".crystal-image" ).empty();
+    $( ".crystals" ).empty();
     $('#random-number').html(randomNumber);
     $('#your-total').html(yourTotal);
  }
@@ -43,41 +45,43 @@ $('#random-number').html(randomNumber);
 //     console.log(b);
 // }
 
+$("button").click(function(){
+    $("p").toggle(500);
+  });
 
+
+
+function newImages() {
 for (let i = 0; i < 4; i++) {
     let imageCrystal = $("<img>");
     let crystalNumber = Math.floor(Math.random() * 12 + 1);
-    imageCrystal.addClass("crystal-image col-md-2").attr("id","crystalID" + i);
-    imageCrystal.attr("src", "assets/images/crystal" + i + ".png").css('width', '200px', 'height', '200px', 'padding', '20px');
+    imageCrystal.addClass("crystal-image col-md-2 col-sm-3").attr("id","crystalID" + i);
+    imageCrystal.attr("src", "assets/images/crystal" + i + ".png");
     imageCrystal.attr("data-crystalValue", crystalNumber);
     imageCrystal.attr("data-location", i);
     $("#crystals").append(imageCrystal);
 }
+
 // debugger;
 
 
 $(".crystal-image").click(function() {
     let crystalValue = parseInt($(this).attr("data-crystalValue"));
     $( "#crystalID" + $(this).attr("data-location") ).animate({
-        width: "250px"
-      }, 400 ); 
+        padding: "30px"
+      }, 300 ); 
       $( "#crystalID" + $(this).attr("data-location") ).animate({
-        width: "200px"
-      }, 400 );
+        padding: "10px"
+      }, 200 );
+      $( "#crystalID" + $(this).attr("data-location") ).animate({
+        padding: "20px"
+      }, 100 );
     guessTotal += crystalValue;
     $("#your-total").html(guessTotal);
-
-
-    // $( "#crystals" ).animate({
-    //     height: "toggle"
-    //   }, 500 );  
-    //   $( "#animation" ).animate({
-    //     width: "+10%"
-    //   }, 500 ); 
+ 
     checkWin();
-    console.log($(this).attr("data-crystalValue"));
 });
-
+}
 
 
 // for (let i = 0; i < 4; i++) {
@@ -99,13 +103,13 @@ $(".crystal-image").click(function() {
 
 
 function checkWin() {
-    console.log('total', guessTotal)
-    console.log('random', randomNumber)
+
     if (guessTotal > randomNumber) {
         // $("#score, #your-total").empty();
         losses += 1;
         $("#losses").html("Losses: " + losses);
         playAgain();
+        newImages();
     }
     
     else if (guessTotal === randomNumber) {
@@ -113,6 +117,7 @@ function checkWin() {
         $("#wins").html("Wins: " + wins);
         // $("#score, #your-total, #crystals").empty();
         playAgain();
+        newImages();
     }
 }
 
@@ -123,7 +128,7 @@ function checkWin() {
   
 //   playAgain();
   
-
+newImages();
 
 
 

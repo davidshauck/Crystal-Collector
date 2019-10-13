@@ -64,7 +64,7 @@ for (let i = 0; i < 4; i++) {
         }, 100, function () { $(this).removeAttr('style'); });
         randomNumber -= crystalValue;
         $("#your-total").html(randomNumber);
-    
+        // run function to check if player has won
         checkWin();
     });
 }
@@ -75,14 +75,18 @@ function checkWin() {
     if (randomNumber < 0) {
         losses += 1;
         $("#losses").html("Losses: " + losses);
+        // generate new random number
         playAgain();
+        // reset image values
         newImages();
     }
     
     else if (randomNumber === 0) {
         wins += 1;
         $("#wins").html("Wins: " + wins);
+        // generate new random number
         playAgain();
+        // reset image values
         newImages();
     }
 }

@@ -39,6 +39,38 @@ h1 {
     text-align: center;
 }
 
+#wins {
+    font-family: monospace;
+    font-size: 40px;
+    color :black;
+    text-align: center;
+    background-color: #a4eda2;
+}
+
+#winsText {
+    font-family: monospace;
+    font-size: 40px;
+    color :black;
+    text-align: center;
+    background-color: #a2ede9;
+}
+
+#losses {
+    font-family: monospace;
+    font-size: 40px;
+    color :black;
+    text-align: center;
+    background-color: #a4eda2;
+}
+
+#lossesText {
+    font-family: monospace;
+    font-size: 40px;
+    color :black;
+    text-align: center;
+    background-color: #a2ede9;
+}
+
 #your-total {
     font-family: monospace;
     font-size: 120px;
@@ -70,6 +102,10 @@ p {
 .row {
     padding: 0px;
 }
+
+/* .wins {
+    display: block;
+} */
 
 /* media queries */
 @media screen and (min-width: 768px) {

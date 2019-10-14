@@ -7,8 +7,8 @@ let guessTotal = 0;
 let yourTotal = 0;
 
 // set intial html
-$("#wins").html("Wins: " + wins);
-$("#losses").html("Losses: " + losses);
+$("#wins").html(wins);
+$("#losses").html(losses);
 
 // auto replay
 function playAgain() {
@@ -74,7 +74,7 @@ function checkWin() {
 
     if (randomNumber < 0) {
         losses += 1;
-        $("#losses").html("Losses: " + losses);
+        $("#losses").html(losses);
         // generate new random number
         playAgain();
         // reset image values
@@ -83,7 +83,7 @@ function checkWin() {
     
     else if (randomNumber === 0) {
         wins += 1;
-        $("#wins").html("Wins: " + wins);
+        $("#wins").html(wins);
         // generate new random number
         playAgain();
         // reset image values

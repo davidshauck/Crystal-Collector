@@ -17,7 +17,7 @@ html {
     text-align: center;
     background-color: #a4eda2;
     padding: 10px;
-    margin: 0px 30% 0px 30%;
+    margin: 0px 33% 0px 33%;
     border-radius: 6px;
     border: none;
     color: white;
@@ -44,7 +44,7 @@ h1 {
     font-size: 40px;
     color :black;
     text-align: center;
-    background-color: #a4eda2;
+    background-color: #a2ede9;
 }
 
 #winsText {
@@ -52,7 +52,7 @@ h1 {
     font-size: 40px;
     color :black;
     text-align: center;
-    background-color: #a2ede9;
+    background-color: #a4eda2;
 }
 
 #losses {
@@ -60,7 +60,7 @@ h1 {
     font-size: 40px;
     color :black;
     text-align: center;
-    background-color: #a4eda2;
+    background-color: #a2ede9;
 }
 
 #lossesText {
@@ -68,7 +68,7 @@ h1 {
     font-size: 40px;
     color :black;
     text-align: center;
-    background-color: #a2ede9;
+    background-color: #a4eda2;
 }
 
 #your-total {

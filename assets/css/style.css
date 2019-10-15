@@ -26,12 +26,6 @@ html {
     cursor: pointer;
 }
 
-h1 {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
 .display {
     font-family: 'Exo', sans-serif;
     font-size: 42px;
@@ -107,11 +101,6 @@ p {
     font-size: 18px;
 }
 
-/* .crystalDims {
-    height: 191px;
-    width: 191px;
-} */
-
 .height {
     height: 55px;
 }
@@ -120,10 +109,8 @@ p {
     padding: 0px;
 }
 
+
 /* media queries */
-
-
-
 
 @media screen and (max-width: 992px) {
 
@@ -133,14 +120,7 @@ p {
     padding: 0px;
     }
 
-    /* .crystalDims {
-    height: 150px;
-    width: 150px;
-    } */
-
     .crystals {
-    /* height: 150px;
-    width: 150px; */
     white-space: nowrap;
     padding: 0px;
     }
@@ -155,10 +135,6 @@ p {
     padding-top: 10px;
     }
     
-    /* .button {
-    margin: 0px 20% 0px 20%;
-    } */
-      
   }
 
   @media screen and (max-width: 768px) {
@@ -194,7 +170,6 @@ p {
     img {
     width: 100px;
     height: 100px;
-    /* padding: 5px; */
     }
 
     .crystals {

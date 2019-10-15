@@ -7,7 +7,7 @@ html {
 }
 
 #random-number {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 120px;
     color: white;
     text-align: center;
@@ -33,14 +33,14 @@ h1 {
 }
 
 .display {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 42px;
     color :black;
     text-align: center;
 }
 
 #wins {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 40px;
     color :black;
     text-align: center;
@@ -49,7 +49,7 @@ h1 {
 }
 
 #winsText {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 40px;
     color :black;
     text-align: center;
@@ -59,7 +59,7 @@ h1 {
 }
 
 #losses {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 40px;
     color :black;
     text-align: center;
@@ -68,7 +68,7 @@ h1 {
 }
 
 #lossesText {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 40px;
     color :black;
     text-align: center;
@@ -78,7 +78,7 @@ h1 {
 }
 
 #your-total {
-    font-family: monospace;
+    font-family: 'Exo', sans-serif;
     font-size: 120px;
     color: white;
     text-align: center;
@@ -86,6 +86,8 @@ h1 {
 
 .crystal-image {
     padding: 5px;
+    height: 191px;
+    width: 191px;
 }
 
 .container {
@@ -105,6 +107,11 @@ p {
     font-size: 18px;
 }
 
+/* .crystalDims {
+    height: 191px;
+    width: 191px;
+} */
+
 .height {
     height: 55px;
 }
@@ -123,9 +130,19 @@ p {
     img {
     width: 150px;
     height: 150px;
+    padding: 0px;
     }
+
+    /* .crystalDims {
+    height: 150px;
+    width: 150px;
+    } */
+
     .crystals {
+    /* height: 150px;
+    width: 150px; */
     white-space: nowrap;
+    padding: 0px;
     }
 
     #winsText {
@@ -146,6 +163,12 @@ p {
 
   @media screen and (max-width: 768px) {
 
+    img {
+    width: 125px;
+    height: 125px;
+    padding: 0px;
+    }
+
     #winsText {
     font-size: 22px;
     padding-top: 10px;
@@ -154,6 +177,10 @@ p {
     #lossesText {
     font-size: 22px;
     padding-top: 10px;
+    }
+
+    #losses {
+    padding-right: 5px;
     }
 
     .button {
@@ -165,13 +192,14 @@ p {
   @media screen and (max-width: 468px) {
 
     img {
-    width: 125px;
-    height: 125 px;
+    width: 100px;
+    height: 100px;
     /* padding: 5px; */
     }
 
     .crystals {
     white-space: nowrap;
+    padding: 0px;
     }
 
     #winsText {
@@ -184,7 +212,11 @@ p {
     font-size: 24px;
     vertical-align: middle;
     padding-top: 20px;
-    } 
+    }
+
+    #losses {
+    padding-right: 5px;
+    }    
 
     .button {
     margin: 0px 20% 0px 20%;

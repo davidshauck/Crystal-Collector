@@ -40,7 +40,7 @@ function newImages() {
 for (let i = 0; i < 4; i++) {
     let imageCrystal = $("<img>");
     let crystalNumber = Math.floor(Math.random() * 12 + 1);
-    imageCrystal.addClass("crystal-image col-md-2 col-sm-3").attr("id","crystalID" + i);
+    imageCrystal.addClass("crystal-image col-md-2 col-sm-3 col-xs-3 crystalDims").attr("id","crystalID" + i);
     imageCrystal.attr("src", "assets/images/crystal" + i + "x.png");
     imageCrystal.attr("data-crystalValue", crystalNumber);
     imageCrystal.attr("data-location", i);
@@ -52,7 +52,7 @@ for (let i = 0; i < 4; i++) {
         let crystalValue = parseInt($(this).attr("data-crystalValue"));
         $( "#crystalID" + $(this).attr("data-location") ).animate({
             // width: "170px"
-            padding: "20px"
+            padding: "20px 30px 20px 30px"
         }, 300 ); 
         $( "#crystalID" + $(this).attr("data-location") ).animate({
             // width: "210px"
@@ -60,7 +60,7 @@ for (let i = 0; i < 4; i++) {
         }, 200 );
         $( "#crystalID" + $(this).attr("data-location") ).animate({
             // width: "191px"
-            padding: "5px"
+            padding: "5px 10px 5px 10px"
         }, 100, function () { $(this).removeAttr('style'); });
         randomNumber -= crystalValue;
         $("#your-total").html(randomNumber);

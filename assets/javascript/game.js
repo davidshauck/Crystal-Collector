@@ -40,7 +40,7 @@ function newImages() {
 for (let i = 0; i < 4; i++) {
     let imageCrystal = $("<img>");
     let crystalNumber = Math.floor(Math.random() * 12 + 1);
-    imageCrystal.addClass("crystal-image col-md-2 col-sm-3 col-xs-3 crystalDims").attr("id","crystalID" + i);
+    imageCrystal.addClass("crystal-image col-md-2 col-sm-2 col-xs-3 crystalDims").attr("id","crystalID" + i);
     imageCrystal.attr("src", "assets/images/crystal" + i + "x.png");
     imageCrystal.attr("data-crystalValue", crystalNumber);
     imageCrystal.attr("data-location", i);
